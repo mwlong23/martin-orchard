@@ -431,7 +431,7 @@
         null,
         null,
         null,
-        null,
+        1,
         null,
         null,
         null,
@@ -533,7 +533,7 @@
       "/Users/Guest/Desktop/martin_family_orchard/config/routes.rb": [
         1,
         1,
-        null,
+        1,
         null,
         1,
         1,
@@ -547,6 +547,9 @@
         null,
         1,
         null,
+        null,
+        1,
+        1,
         null
       ],
       "/Users/Guest/Desktop/martin_family_orchard/app/models/application_record.rb": [
@@ -557,6 +560,16 @@
       "/Users/Guest/Desktop/martin_family_orchard/app/controllers/application_controller.rb": [
         1,
         1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
         null
       ],
       "/Users/Guest/Desktop/martin_family_orchard/app/helpers/application_helper.rb": [
@@ -578,6 +591,12 @@
         null
       ],
       "/Users/Guest/Desktop/martin_family_orchard/app/channels/application_cable/connection.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/martin_family_orchard/app/controllers/pages_controller.rb": [
         1,
         1,
         null,
@@ -747,9 +766,15 @@
       ],
       "/Users/Guest/Desktop/martin_family_orchard/app/models/product.rb": [
         1,
+        1,
         null
       ],
       "/Users/Guest/Desktop/martin_family_orchard/app/models/review.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
         1,
         null
       ],
@@ -761,6 +786,6 @@
         null
       ]
     },
-    "timestamp": 1512151035
+    "timestamp": 1512157962
   }
 }
