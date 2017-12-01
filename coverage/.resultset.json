@@ -10,6 +10,7 @@
         2,
         2,
         2,
+        2,
         null,
         null
       ],
@@ -814,7 +815,13 @@
         null
       ],
       "/Users/Guest/Desktop/martin_family_orchard/spec/factories/reviews.rb": [
-
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
       ],
       "/Users/Guest/Desktop/martin_family_orchard/spec/factories/users.rb": [
         1,
@@ -824,7 +831,17 @@
         null
       ],
       "/Users/Guest/Desktop/martin_family_orchard/spec/models/review_spec.rb": [
-        1
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        null
       ],
       "/Users/Guest/Desktop/martin_family_orchard/spec/models/user_spec.rb": [
         1,
@@ -834,6 +851,6 @@
         null
       ]
     },
-    "timestamp": 1512166223
+    "timestamp": 1512166811
   }
 }

@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-12-01T14:10:23-08:00">2017-12-01T14:10:23-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-12-01T14:20:11-08:00">2017-12-01T14:20:11-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">77.34%</span></span>
+    (<span class="covered_percent"><span class="red">78.6%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.81
+         0.85
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>36</b> files in total.
-    <b>203</b> relevant lines. 
-    <span class="green"><b>157</b> lines covered</span> and
+    <b>215</b> relevant lines. 
+    <span class="green"><b>169</b> lines covered</span> and
     <span class="red"><b>46</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -353,11 +353,11 @@
       <tr>
         <td class="strong"><a href="#9d8f9309f9325f4aa452040319828cd4a1b24b15" class="src_link" title="spec/factories/reviews.rb">spec/factories/reviews.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>7</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0.0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -373,21 +373,21 @@
       <tr>
         <td class="strong"><a href="#2be5cfef9d6c381ad9f1316431078d914fc9e502" class="src_link" title="spec/models/product_spec.rb">spec/models/product_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>10</td>
-        <td>7</td>
-        <td>7</td>
+        <td>11</td>
+        <td>8</td>
+        <td>8</td>
         <td>0</td>
-        <td>1.7</td>
+        <td>1.8</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#854ad505bca1b4e0703435c18a4afbf24c250da9" class="src_link" title="spec/models/review_spec.rb">spec/models/review_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
+        <td>11</td>
+        <td>7</td>
+        <td>7</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -5045,14 +5045,56 @@
     <h3>spec/factories/reviews.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>0</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
   <pre>
     <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">FactoryBot.define do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  factory(:review) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    title(&#39;Rosa Hale Peach&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    body(&#39;Solid textured tasty late summer peach&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rating(4)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">end</code>
+        </li>
       
     </ol>
   </pre>
@@ -5113,8 +5155,8 @@
     <h3>spec/models/product_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>7</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -5170,13 +5212,19 @@
           <code class="ruby">  it { should validate_presence_of :weekly_deliver_cost }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should have_many :reviews }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">end</code>
@@ -5192,8 +5240,8 @@
     <h3>spec/models/review_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>1</b> relevant lines. 
-      <span class="green"><b>1</b> lines covered</span> and
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -5205,6 +5253,66 @@
           <span class="hits">1</span>
           
           <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe Review do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should validate_presence_of :title }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should validate_presence_of :body }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should validate_presence_of :rating }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should belong_to :product }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should belong_to :user }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">end</code>
         </li>
       
     </ol>
