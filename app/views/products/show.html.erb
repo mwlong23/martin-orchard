@@ -26,4 +26,9 @@
 </p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<%= link_to 'Back', products_path %> |
+<%= link_to 'Reviews', product_reviews_path(@product) %>
+
+ <% @product.reviews.each do |review| %>
+ <h1>  <%review.title %> </h1>
+ <%  end%>

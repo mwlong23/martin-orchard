@@ -1,25 +1,28 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: [:show, :edit, :update, :destroy]
-  skip_before_action :authenticate_user!, :only => [:index]
+  # skip_before_action :authenticate_user!, :only => [:index]
 
-  before_action :only => [:new, :edit] do
-    redirect_to new_user_session_path unless current_user && current_user.admin
-  end
-  
+  # before_action :only => [:new, :edit] do
+  #   redirect_to new_user_session_path unless current_user && current_user.admin
+  # end
+
   # GET /reviews
   # GET /reviews.json
   def index
+
     @reviews = Review.all
   end
 
   # GET /reviews/1
   # GET /reviews/1.json
   def show
+    @product = Product.find(params[:product_id])
   end
 
   # GET /reviews/new
   def new
-    @review = Review.new
+    @product = Product.find(params[:product_id])
+    @review = @product.reviews.new
   end
 
   # GET /reviews/1/edit
@@ -29,6 +32,7 @@ class ReviewsController < ApplicationController
   # POST /reviews
   # POST /reviews.json
   def create
+    @product = Product.find(params[:product_id])
     @review = Review.new(review_params)
 
     respond_to do |format|
